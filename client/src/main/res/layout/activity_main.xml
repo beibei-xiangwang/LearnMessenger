@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <Button
+        android:id="@+id/btn_invoke"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="invokeApp"
+        android:text="唤起服务端app" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_marginTop="50dp"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/btn_bind"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="bindApp"
+            android:text="绑定服务端" />
+
+        <Button
+            android:id="@+id/btn_unbind"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="invokeApp"
+            android:text="解绑服务端" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_state"
+        android:layout_marginTop="50dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="与服务端连接状态"
+        android:textSize="18sp" />
+
+    <Button
+        android:id="@+id/btn_send"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="50dp"
+        android:text="发送消息" />
+
+    <TextView
+        android:id="@+id/tv_message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:text="接收到的消息"
+        android:textSize="18sp" />
+
+</LinearLayout>
